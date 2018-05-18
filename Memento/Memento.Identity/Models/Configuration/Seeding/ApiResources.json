@@ -1,0 +1,84 @@
+[
+	{
+		/* Ids */
+		"Name": "memento-movies",
+
+		/* Display */
+		"DisplayName": "Memento.Movies API",
+		"Description": "The Memento.Movies API provides access to the genre, movie and person resources.",
+
+		/* Secrets */
+		"Secrets": null,
+
+		/* Scopes */
+		"Scopes":
+		[
+			{
+				/* Ids */
+				"Name": "memento-movies-genres",
+
+				/* Display */
+				"DisplayName": "Memento.Movies API - Genres",
+				"Description": "This scope gives access to the genres resource.",
+
+				/* Claims */
+				"UserClaims": null,
+
+				/* Miscellaneous */
+				"Required": true,
+				"Emphasize": false,
+				"ShowInDiscoveryDocument": true
+			},
+			{
+				/* Ids */
+				"Name": "memento-movies-movies",
+
+				/* Display */
+				"DisplayName": "Memento.Movies API - Movies",
+				"Description": "This scope gives access to the movies resource.",
+
+				/* Claims */
+				"UserClaims": null,
+
+				/* Miscellaneous */
+				"Required": true,
+				"Emphasize": false,
+				"ShowInDiscoveryDocument": true
+			},
+			{
+				/* Ids */
+				"Name": "memento-movies-persons",
+
+				/* Display */
+				"DisplayName": "Memento.Movies API - Persons",
+				"Description": "This scope represents the persons resource.",
+
+				/* Claims */
+				"UserClaims": null,
+
+				/* Miscellaneous */
+				"Required": true,
+				"Emphasize": false,
+				"ShowInDiscoveryDocument": true
+			}
+		],
+
+		/* Claims */
+		"UserClaims":
+		[
+			"sub",
+			"email",
+			"email_verified",
+			"phone_number",
+			"phone_number_verified",
+			"role"
+		],
+		"Properties":
+		{
+		},
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"NonEditable": false
+	}
+]

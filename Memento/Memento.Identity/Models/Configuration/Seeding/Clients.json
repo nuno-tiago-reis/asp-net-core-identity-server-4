@@ -1,0 +1,108 @@
+[
+	{
+		/* Protocol */
+		"ProtocolType": "oidc",
+
+		/* Ids */
+		"ClientId": "memento-movies",
+		"ClientClaimsPrefix": "memento-movies-",
+
+		/* Display */
+		"ClientName": "Memento.Movies",
+		"ClientUri": "https://localhost:44390",
+		"Description": "The Memento.Movies Blazor SPA.",
+		"LogoUri": null,
+
+		/* Claims */
+		"Claims": null,
+		"Properties": null,
+		"AlwaysSendClientClaims": false,
+		"AlwaysIncludeUserClaimsInIdToken": false,
+
+		/* Scopes */
+		"AllowedScopes":
+		[
+			"openid",
+			"profile",
+			"email",
+			"phone",
+			"roles",
+			"memento-movies-genres",
+			"memento-movies-movies",
+			"memento-movies-persons"
+		],
+
+		/* Grants */
+		"AllowedGrantTypes":
+		[
+			"implicit"
+		],
+
+		/* Providers */
+		"IdentityProviderRestrictions":
+		[
+		],
+		"EnableLocalLogin": true,
+
+		/* Secrets */
+		"ClientSecrets":
+		[
+		],
+		"RequireClientSecret": false,
+
+		/* Hostnames */
+		"AllowedCorsOrigins":
+		[
+			"http://localhost:44291",
+			"https://localhost:44391"
+		],
+		"RedirectUris":
+		[
+			"http://localhost:44291",
+			"https://localhost:44391"
+		],
+		"PostLogoutRedirectUris":
+		[
+			"http://localhost:44291",
+			"https://localhost:44391"
+		],
+		"BackChannelLogoutSessionRequired": false,
+		"BackChannelLogoutUri": null,
+		"FrontChannelLogoutSessionRequired": false,
+		"FrontChannelLogoutUri": null,
+
+		/* Access Tokens */
+		"AccessTokenLifetime": 3600,
+		"AccessTokenType": 0,
+		"AllowAccessTokensViaBrowser": true,
+		"IncludeJwtId": true,
+
+		/* Identity Tokens */
+		"IdentityTokenLifetime": 3600,
+
+		/* Refresh Tokens */
+		"AbsoluteRefreshTokenLifetime": 0,
+		"RefreshTokenExpiration": 1,
+		"RefreshTokenUsage": 1,
+		"SlidingRefreshTokenLifetime": 0,
+		"UpdateAccessTokenClaimsOnRefresh": false,
+
+		/* Consent */
+		"AllowRememberConsent": true,
+		"ConsentLifetime": 216000,
+		"RequireConsent": true,
+
+		/* Device Flow */
+		"UserCodeType": null,
+		"DeviceCodeLifetime": 0,
+		"AuthorizationCodeLifetime": 0,
+
+		/* Miscellaneous */
+		"AllowOfflineAccess": true,
+		"AllowPlainTextPkce": false,
+		"Enabled": true,
+		"NonEditable": true,
+		"RequirePkce": true,
+		"UserSsoLifetime": null
+	}
+]

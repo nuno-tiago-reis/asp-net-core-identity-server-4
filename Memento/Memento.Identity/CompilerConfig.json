@@ -1,0 +1,34 @@
+﻿[
+	{
+		"inputFile": "wwwroot/css/styles.scss",
+		"outputFile": "wwwroot/css/styles.css",
+		"minify":
+		{
+			"enabled": true
+		}
+	},
+	{
+		"inputFile": "wwwroot/lib/bootstrap/scss/bootstrap.scss",
+		"outputFile": "wwwroot/lib/bootstrap/css/bootstrap.css",
+		"minify":
+		{
+			"enabled": true
+		}
+	},
+	{
+		"inputFile": "wwwroot/lib/bootstrap/scss/bootstrap-grid.scss",
+		"outputFile": "wwwroot/lib/bootstrap/css/bootstrap-grid.css",
+		"minify":
+		{
+			"enabled": true
+		}
+	},
+	{
+		"inputFile": "wwwroot/lib/bootstrap/scss/bootstrap-reboot.scss",
+		"outputFile": "wwwroot/lib/bootstrap/css/bootstrap-reboot.css",
+		"minify":
+		{
+			"enabled": false
+		}
+	}
+]

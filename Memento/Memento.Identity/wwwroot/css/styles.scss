@@ -1,0 +1,328 @@
+﻿@import "../lib//bootstrap/scss/bootstrap.scss";
+
+/* #region [variables] */
+$phone-breakpoint: 575.98px;
+$tablet-breakpoint: 767.98px;
+$desktop-breakpoint: 991.98px;
+$large-desktop-breakpoint: 1199.98px;
+/* #endregion */
+
+/* #region [breadcrumb] */
+.bg-breadcrumb
+{
+	background-color: $breadcrumb-bg;
+}
+/* #endregion */
+
+/* #region [typeahead] */
+$typeahead-background-color: rgb(255, 255, 255);
+$typeahead-background-color-hover: rgb(146, 194, 246);
+$typeahead-border: 1px solid #ced4da;
+$typeahead-border-radius: 0;
+$typeahead-box-shadow: 2px 2px 5px rgb(146, 194, 246);
+
+.typeahead-container
+{
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	min-height: $input-height;
+	margin: 0.5rem 0 0 0;
+	padding: 0;
+	font-family: $input-font-family;
+	@include font-size($input-font-size);
+	font-weight: $input-font-weight;
+	line-height: $input-line-height;
+	color: $input-color;
+	background-color: $input-bg;
+	background-clip: padding-box;
+	border: $typeahead-border;
+	border-radius: $input-border-radius;
+	box-shadow: $typeahead-box-shadow;
+	@include transition($input-transition);
+}
+
+.typeahead-message
+{
+	width: 100%;
+	height: $input-height;
+	margin: 0;
+	padding: $input-padding-y $input-padding-x;
+}
+
+.typeahead-message:hover
+{
+	background-color: $input-bg;
+}
+
+.typeahead-suggestion
+{
+	width: 100%;
+	height: $input-height;
+	margin: 0;
+	padding: $input-padding-y $input-padding-x;
+}
+
+.typeahead-suggestion:hover
+{
+	background-color: $input-focus-border-color;
+}
+/* #endregion */
+
+/* #region [utility] width */
+$i: 5;
+
+@while $i <= 100
+{
+	.w-#{$i}
+	{
+		width: percentage($i/100) !important;
+	}
+
+	@media (min-width: $phone-breakpoint)
+	{
+		.w-sm-#{$i}
+		{
+			width: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint)
+	{
+		.w-md-#{$i}
+		{
+			width: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $desktop-breakpoint)
+	{
+		.w-lg-#{$i}
+		{
+			width: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $large-desktop-breakpoint)
+	{
+		.w-xl-#{$i}
+		{
+			width: percentage($i/100) !important;
+		}
+	}
+
+	$i: $i + 5;
+}
+
+$i: 50;
+
+@while $i <= 500
+{
+	.w-#{$i}-px
+	{
+		width: #{$i}px !important;
+	}
+
+	@media (min-width: $phone-breakpoint)
+	{
+		.w-sm-#{$i}-px
+		{
+			width: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint)
+	{
+		.w-md-#{$i}-px
+		{
+			width: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $desktop-breakpoint)
+	{
+		.w-lg-#{$i}-px
+		{
+			width: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $large-desktop-breakpoint)
+	{
+		.w-xl-#{$i}-px
+		{
+			width: #{$i}px !important;
+		}
+	}
+
+	$i: $i + 50;
+}
+/* #endregion */
+
+/* #region [utility] height */
+$i: 5;
+
+@while $i <= 100
+{
+	.h-#{$i}
+	{
+		height: percentage($i/100) !important;
+	}
+
+	@media (min-width: $phone-breakpoint)
+	{
+		.h-sm-#{$i}
+		{
+			height: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint)
+	{
+		.h-md-#{$i}
+		{
+			height: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $desktop-breakpoint)
+	{
+		.h-lg-#{$i}
+		{
+			height: percentage($i/100) !important;
+		}
+	}
+
+	@media (min-width: $large-desktop-breakpoint)
+	{
+		.h-xl-#{$i}
+		{
+			height: percentage($i/100) !important;
+		}
+	}
+
+	$i: $i + 5;
+}
+
+$i: 50;
+
+@while $i <= 500
+{
+	.h-#{$i}-px
+	{
+		height: #{$i}px !important;
+	}
+
+	@media (min-width: $phone-breakpoint)
+	{
+		.h-sm-#{$i}-px
+		{
+			height: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint)
+	{
+		.h-md-#{$i}-px
+		{
+			height: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $desktop-breakpoint)
+	{
+		.h-lg-#{$i}-px
+		{
+			height: #{$i}px !important;
+		}
+	}
+
+	@media (min-width: $large-desktop-breakpoint)
+	{
+		.h-xl-#{$i}-px
+		{
+			height: #{$i}px !important;
+		}
+	}
+
+	$i: $i + 50;
+}
+/* #endregion */
+
+/* #region [utility] opacity */
+$i: 5;
+
+@while $i <= 100
+{
+	opacity-#{$i}
+	{
+		opacity: $i/100 !important;
+	}
+
+	$i: $i + 5;
+}
+/* #endregion */
+
+/* #region [utility] grid */
+@mixin column
+{
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+$i: 1;
+$j: 24;
+
+@while $i <= $j
+{
+	.col-#{$i}-#{$j}
+	{
+		@include column;
+	}
+
+	@media (min-width: $phone-breakpoint)
+	{
+		.col-sm-#{$i}-#{$j}
+		{
+			-webkit-box-flex: 0;
+			flex: 0 0 percentage($i/$j);
+			max-width: percentage($i/$j);
+		}
+	}
+
+	@media (min-width: $tablet-breakpoint)
+	{
+		.col-md-#{$i}-#{$j}
+		{
+			-webkit-box-flex: 0;
+			flex: 0 0 percentage($i/$j);
+			max-width: percentage($i/$j);
+		}
+	}
+
+	@media (min-width: $desktop-breakpoint)
+	{
+		.col-lg-#{$i}-#{$j}
+		{
+			-webkit-box-flex: 0;
+			flex: 0 0 percentage($i/$j);
+			max-width: percentage($i/$j);
+		}
+	}
+
+	@media (min-width: $large-desktop-breakpoint)
+	{
+		.col-xl-#{$i}-#{$j}
+		{
+			-webkit-box-flex: 0;
+			flex: 0 0 percentage($i/$j);
+			max-width: percentage($i/$j);
+		}
+	}
+
+	$i: $i+1;
+}
+/* #endregion */

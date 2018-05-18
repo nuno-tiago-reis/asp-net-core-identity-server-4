@@ -1,0 +1,3 @@
+[submodule "Memento/Memento.Shared"]
+	path = Memento/Memento.Shared
+	url = https://github.com/nuno-tiago-reis/asp-net-core-shared
