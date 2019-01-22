@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="CONTROLLER_CREATE_SUCCESSFUL" xml:space="preserve">
+		<value>A criação foi concluída com successo.</value>
+	</data>
+	<data name="CONTROLLER_DELETE_SUCCESSFUL" xml:space="preserve">
+		<value>A remoção foi concluída com successo.</value>
+	</data>
+	<data name="CONTROLLER_GET_ALL_SUCCESSFUL" xml:space="preserve">
+		<value>A listagem foi obtida com successo.</value>
+	</data>
+	<data name="CONTROLLER_GET_SUCCESSFUL" xml:space="preserve">
+		<value>O detalhe foi obtido successo.</value>
+	</data>
+	<data name="CONTROLLER_UPDATE_SUCCESSFUL" xml:space="preserve">
+		<value>A atualização foi concluída com successo.</value>
+	</data>
+	<data name="ERROR_DUPLICATE_FIELD" xml:space="preserve">
+		<value>O campo '{0}' já existe.</value>
+	</data>
+	<data name="ERROR_INVALID_FIELD" xml:space="preserve">
+		<value>O campo '{0}' é inválido.</value>
+	</data>
+	<data name="ERROR_LOADING" xml:space="preserve">
+		<value>Ocorreu um erro durante o carregamento da página. Por favor tente novamente mais tarde.</value>
+	</data>
+	<data name="ERROR_NOT_FOUND" xml:space="preserve">
+		<value>O {0} não existe.</value>
+	</data>
+	<data name="ERROR_UNEXPECTED" xml:space="preserve">
+		<value>Ocorreu um erro inesperado. Por favor tente novamente mais tarde.</value>
+	</data>
+	<data name="ROLE" xml:space="preserve">
+		<value>Perfil</value>
+	</data>
+	<data name="ROLE_CONCURRENCYSTAMP" xml:space="preserve">
+		<value>Selo de Concurrência</value>
+	</data>
+	<data name="ROLE_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="ROLE_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="ROLE_ENABLED" xml:space="preserve">
+		<value>Ativo</value>
+	</data>
+	<data name="ROLE_ENABLED_CHECKED" xml:space="preserve">
+		<value>Ativo</value>
+	</data>
+	<data name="ROLE_ENABLED_UNCHECKED" xml:space="preserve">
+		<value>Inativo</value>
+	</data>
+	<data name="ROLE_ID" xml:space="preserve">
+		<value>Identificador</value>
+	</data>
+	<data name="ROLE_NAME" xml:space="preserve">
+		<value>Nome</value>
+	</data>
+	<data name="ROLE_ORDER_ASCENDING" xml:space="preserve">
+		<value>Ascendente</value>
+	</data>
+	<data name="ROLE_ORDER_DESCENDING" xml:space="preserve">
+		<value>Descendente</value>
+	</data>
+	<data name="ROLE_ROLECLAIMS" xml:space="preserve">
+		<value>Permissões</value>
+	</data>
+	<data name="ROLE_ROLEUSERS" xml:space="preserve">
+		<value>Utilizadores</value>
+	</data>
+	<data name="ROLE_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="ROLE_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="ROLECLAIM" xml:space="preserve">
+		<value>Permissão</value>
+	</data>
+	<data name="ROLECLAIM_CLAIMTYPE" xml:space="preserve">
+		<value>Tipo da Permissão</value>
+	</data>
+	<data name="ROLECLAIM_CLAIMVALUE" xml:space="preserve">
+		<value>Valor da Permissão</value>
+	</data>
+	<data name="ROLECLAIM_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="ROLECLAIM_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="ROLECLAIM_ID" xml:space="preserve">
+		<value>Identificador</value>
+	</data>
+	<data name="ROLECLAIM_ROLE" xml:space="preserve">
+		<value>Perfil</value>
+	</data>
+	<data name="ROLECLAIM_ROLEID" xml:space="preserve">
+		<value>Identificador do Perfil</value>
+	</data>
+	<data name="ROLECLAIM_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="ROLECLAIM_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USER" xml:space="preserve">
+		<value>Utilizador</value>
+	</data>
+	<data name="USER_ACCESSFAILEDCOUNT" xml:space="preserve">
+		<value>Acessos Falhados</value>
+	</data>
+	<data name="USER_CONCURRENCYSTAMP" xml:space="preserve">
+		<value>Selo de Concurrência</value>
+	</data>
+	<data name="USER_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="USER_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="USER_EMAIL" xml:space="preserve">
+		<value>Email</value>
+	</data>
+	<data name="USER_EMAILCONFIRMED" xml:space="preserve">
+		<value>Email Confirmado</value>
+	</data>
+	<data name="USER_ENABLED" xml:space="preserve">
+		<value>Ativo</value>
+	</data>
+	<data name="USER_ENABLED_CHECKED" xml:space="preserve">
+		<value>Activo</value>
+	</data>
+	<data name="USER_ENABLED_UNCHECKED" xml:space="preserve">
+		<value>Inactivo</value>
+	</data>
+	<data name="USER_ID" xml:space="preserve">
+		<value>Identificador</value>
+	</data>
+	<data name="USER_LOCKOUTENABLED" xml:space="preserve">
+		<value>Bloqueio Ativo</value>
+	</data>
+	<data name="USER_LOCKOUTEND" xml:space="preserve">
+		<value>Bloqueio Termina Em</value>
+	</data>
+	<data name="USER_ORDER_ASCENDING" xml:space="preserve">
+		<value>Ascendente</value>
+	</data>
+	<data name="USER_ORDER_DESCENDING" xml:space="preserve">
+		<value>Descendente</value>
+	</data>
+	<data name="USER_PASSWORDHASH" xml:space="preserve">
+		<value>Hash da Password</value>
+	</data>
+	<data name="USER_PHONENUMBER" xml:space="preserve">
+		<value>Número de Telefone</value>
+	</data>
+	<data name="USER_PHONENUMBERCONFIRMED" xml:space="preserve">
+		<value>Número de Telefone Confirmado</value>
+	</data>
+	<data name="USER_SECURITYSTAMP" xml:space="preserve">
+		<value>Selo de Segurança</value>
+	</data>
+	<data name="USER_TWOFACTORENABLED" xml:space="preserve">
+		<value>Dupla Autenticação Ativa</value>
+	</data>
+	<data name="USER_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="USER_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USER_USERCLAIMS" xml:space="preserve">
+		<value>Permissões</value>
+	</data>
+	<data name="USER_USERLOGINS" xml:space="preserve">
+		<value>Logins</value>
+	</data>
+	<data name="USER_USERNAME" xml:space="preserve">
+		<value>Nome de Utilizador</value>
+	</data>
+	<data name="USER_USERROLES" xml:space="preserve">
+		<value>Perfis</value>
+	</data>
+	<data name="USER_USERTOKENS" xml:space="preserve">
+		<value>Tokens</value>
+	</data>
+	<data name="USERCLAIM" xml:space="preserve">
+		<value>Permissão</value>
+	</data>
+	<data name="USERCLAIM_CLAIMTYPE" xml:space="preserve">
+		<value>Tipo da Permissão</value>
+	</data>
+	<data name="USERCLAIM_CLAIMVALUE" xml:space="preserve">
+		<value>Valor da Permissão</value>
+	</data>
+	<data name="USERCLAIM_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="USERCLAIM_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="USERCLAIM_ID" xml:space="preserve">
+		<value>Identificador</value>
+	</data>
+	<data name="USERCLAIM_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="USERCLAIM_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USERCLAIM_USER" xml:space="preserve">
+		<value>Utilizador</value>
+	</data>
+	<data name="USERCLAIM_USERID" xml:space="preserve">
+		<value>Identificador do Utilizador</value>
+	</data>
+	<data name="USERLOGIN" xml:space="preserve">
+		<value>Login</value>
+	</data>
+	<data name="USERLOGIN_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="USERLOGIN_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="USERLOGIN_LOGINPROVIDER" xml:space="preserve">
+		<value>Fornecedor</value>
+	</data>
+	<data name="USERLOGIN_PROVIDERDISPLAYNAME" xml:space="preserve">
+		<value>Nome do Fornecedor</value>
+	</data>
+	<data name="USERLOGIN_PROVIDERKEY" xml:space="preserve">
+		<value>Chave do Fornecedor</value>
+	</data>
+	<data name="USERLOGIN_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="USERLOGIN_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USERLOGIN_USER" xml:space="preserve">
+		<value>Utilizador</value>
+	</data>
+	<data name="USERLOGIN_USERID" xml:space="preserve">
+		<value>Identificador do Utilizador</value>
+	</data>
+	<data name="USERROLE" xml:space="preserve">
+		<value>Perfil do Utilizador</value>
+	</data>
+	<data name="USERROLE_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="USERROLE_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="USERROLE_ROLE" xml:space="preserve">
+		<value>Perfil</value>
+	</data>
+	<data name="USERROLE_ROLEID" xml:space="preserve">
+		<value>Identificador do Perfil</value>
+	</data>
+	<data name="USERROLE_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Em</value>
+	</data>
+	<data name="USERROLE_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USERROLE_USER" xml:space="preserve">
+		<value>Utilizador</value>
+	</data>
+	<data name="USERROLE_USERID" xml:space="preserve">
+		<value>Identificador do Utilizador</value>
+	</data>
+	<data name="USERTOKEN" xml:space="preserve">
+		<value>Login</value>
+	</data>
+	<data name="USERTOKEN_CREATEDAT" xml:space="preserve">
+		<value>Criado Em</value>
+	</data>
+	<data name="USERTOKEN_CREATEDBY" xml:space="preserve">
+		<value>Criado Por</value>
+	</data>
+	<data name="USERTOKEN_LOGINPROVIDER" xml:space="preserve">
+		<value>Fornecedor</value>
+	</data>
+	<data name="USERTOKEN_NAME" xml:space="preserve">
+		<value>Nome</value>
+	</data>
+	<data name="USERTOKEN_UPDATEDAT" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USERTOKEN_UPDATEDBY" xml:space="preserve">
+		<value>Atualizado Por</value>
+	</data>
+	<data name="USERTOKEN_USER" xml:space="preserve">
+		<value>Utilizador</value>
+	</data>
+	<data name="USERTOKEN_USERID" xml:space="preserve">
+		<value>Identificador do Utilizador</value>
+	</data>
+	<data name="USERTOKEN_VALUE" xml:space="preserve">
+		<value>Valor</value>
+	</data>
+</root>

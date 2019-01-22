@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- base -->
+	<base href="/" />
+
+	<!-- title -->
+	<title>Memento.Identity</title>
+
+	<!-- icon -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<!-- development global styles -->
+	<environment exclude="Production">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="lib/font-awesome/css/all.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</environment>
+
+	<!-- production global styles -->
+	<environment names="Production">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="lib/font-awesome/css/all.min.css" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+	</environment>
+
+	<!-- local styles -->
+	@await this.RenderSectionAsync("styles", required: false)
+
+	<!-- development global scripts -->
+	<environment exclude="Production">
+		<script src="lib/jquery/js/jquery.js" defer></script>
+		<script src="lib/popper/js/popper.js" defer></script>
+		<script src="lib/bootstrap/js/bootstrap.js" defer></script>
+		<script src="lib/font-awesome/js/all.js" defer></script>
+	</environment>
+
+	<!-- production global scripts -->
+	<environment names="Staging, Production">
+		<script src="lib/jquery/js/jquery.min.js" defer></script>
+		<script src="lib/popper/js/popper.min.js" defer></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js" defer></script>
+		<script src="lib/font-awesome/js/all.min.js" defer></script>
+	</environment>
+
+	<!-- local scripts -->
+	@await this.RenderSectionAsync("scripts", required: false)
+	
+	<!-- validation scripts -->
+	<partial name="_ValidationScriptsPartial"/>
+</head>
+<body>
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+</body>
+</html>

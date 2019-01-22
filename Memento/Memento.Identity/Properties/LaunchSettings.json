@@ -1,0 +1,58 @@
+{
+	"iisSettings":
+	{
+		"anonymousAuthentication": true,
+		"windowsAuthentication": false,
+		"iisExpress":
+		{
+			"applicationUrl": "http://localhost:44290",
+			"sslPort": 44390
+		}
+	},
+	"profiles":
+	{
+		"Identity [IIS]":
+		{
+			"commandName": "IISExpress",
+			"launchBrowser": true,
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		"Identity [Kestrel]":
+		{
+			"commandName": "Project",
+			"launchBrowser": true,
+			"applicationUrl": "https://localhost:44390;http://localhost:44290",
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		"Identity.Watch (Debug) [Kestrel]":
+		{
+			"commandName": "Executable",
+			"executablePath": "C:\\Program Files\\dotnet\\dotnet.exe",
+			"commandLineArgs": "watch --project ..\\..\\..\\Memento.Identity.csproj run",
+			"launchBrowser": false,
+			"applicationUrl": "https://localhost:44390",
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		"Identity.Watch (Release) [Kestrel]":
+		{
+			"commandName": "Executable",
+			"executablePath": "C:\\Program Files\\dotnet\\dotnet.exe",
+			"commandLineArgs": "watch --project ..\\..\\..\\Memento.Identity.csproj run",
+			"launchBrowser": false,
+			"applicationUrl": "https://localhost:44390",
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		}
+	}
+}
