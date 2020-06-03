@@ -1,0 +1,122 @@
+[
+	{
+		/* Ids */
+		"Name": "openid",
+
+		/* Display */
+		"DisplayName": "User Identifier",
+		"Description": "The users unique identifier",
+
+		/* Claims */
+		"UserClaims":
+		[
+			"sub"
+		],
+		"Properties": null,
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"Emphasize": true,
+		"Required": true,
+		"ShowInDiscoveryDocument": true
+	},
+	{
+		/* Ids */
+		"Name": "profile",
+
+		/* Display */
+		"DisplayName": "User Profile",
+		"Description": "Your user profile information (first name, last name, etc.)",
+
+		/* Claims */
+		"UserClaims":
+		[
+			"name",
+			"family_name",
+			"given_name",
+			"middle_name",
+			"nickname",
+			"preferred_username",
+			"profile",
+			"picture",
+			"website",
+			"gender",
+			"birthdate",
+			"zoneinfo",
+			"locale",
+			"updated_at"
+		],
+		"Properties": null,
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"Emphasize": true,
+		"Required": true,
+		"ShowInDiscoveryDocument": true
+	},
+	{
+		/* Ids */
+		"Name": "email",
+
+		/* Display */
+		"DisplayName": "Email Address",
+		"Description": "The users email address and whether it's confirmed",
+
+		/* Claims */
+		"UserClaims":
+		[
+			"email",
+			"email_verified"
+		],
+		"Properties": null,
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"Emphasize": true,
+		"Required": true,
+		"ShowInDiscoveryDocument": true
+	},
+	{
+		/* Ids */
+		"Name": "phone",
+
+		/* Display */
+		"DisplayName": "Phone Number",
+		"Description": "The users phone number and whether it's confirmed",
+
+		/* Claims */
+		"UserClaims":
+		[
+			"phone_number",
+			"phone_number_verified"
+		],
+		"Properties": null,
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"Emphasize": true,
+		"Required": true,
+		"ShowInDiscoveryDocument": true
+	},
+	{
+		/* Ids */
+		"Name": "roles",
+
+		/* Display */
+		"DisplayName": "Roles",
+		"Description": "The users roles",
+
+		/* Claims */
+		"UserClaims":
+		[
+			"role"
+		],
+		"Properties": null,
+
+		/* Miscellaneous */
+		"Enabled": true,
+		"Emphasize": true,
+		"Required": true,
+		"ShowInDiscoveryDocument": true
+	}
+]
