@@ -74,7 +74,7 @@ namespace Memento.Identity
 
 			#region [Required: ASP.NET Middleware]
 			services
-				.AddControllers()
+				.AddControllersWithViews()
 				.AddSharedLocalization<SharedResources>(this.IdentitySettings.Localization);
 
 			services
@@ -203,6 +203,27 @@ namespace Memento.Identity
 			services
 				.AddIdentityServer(options =>
 				{
+					// Consent
+					options.UserInteraction.ConsentUrl = "/IdentityServer/Consent";
+					options.UserInteraction.ConsentReturnUrlParameter = "returnUrl";
+
+					// Device
+					options.UserInteraction.DeviceVerificationUrl = "/IdentityServer/Device";
+					options.UserInteraction.DeviceVerificationUserCodeParameter = "userCode";
+
+					// Error
+					options.UserInteraction.ErrorUrl = "/IdentityServer/Error";
+					options.UserInteraction.ErrorIdParameter = "errorId";
+
+					// Login
+					options.UserInteraction.LoginUrl = "/IdentityServer/Account/Login";
+					options.UserInteraction.LoginReturnUrlParameter = "returnUrl";
+
+					// Logout
+					options.UserInteraction.LogoutUrl = "/IdentityServer/Account/Logout";
+					options.UserInteraction.LogoutIdParameter = "logoutId";
+
+					// Events
 					options.Events.RaiseErrorEvents = true;
 					options.Events.RaiseFailureEvents = true;
 					options.Events.RaiseInformationEvents = true;
@@ -369,7 +390,17 @@ namespace Memento.Identity
 			#region [Required: ASP.NET Routing]
 			builder.UseEndpoints(endpoints =>
 			{
-				endpoints.MapControllers();
+				endpoints.MapAreaControllerRoute
+				(
+					name: "IdentityServer",
+					areaName: "IdentityServer",
+					pattern: "IdentityServer/{controller=Home}/{action=Index}/{id?}"
+				);
+				endpoints.MapControllerRoute
+				(
+					name: "Default",
+					pattern: "{controller=Home}/{action=Index}/{id?}"
+				);
 				endpoints.MapRazorPages();
 			});
 			#endregion

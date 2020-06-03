@@ -53,18 +53,18 @@
 		/* Hostnames */
 		"AllowedCorsOrigins":
 		[
-			"http://localhost:44290",
-			"https://localhost:44390"
+			"http://localhost:44291",
+			"https://localhost:44391"
 		],
 		"RedirectUris":
 		[
-			"http://localhost:44290/signin-oidc",
-			"https://localhost:44390/signin-oidc"
+			"http://localhost:44291",
+			"https://localhost:44391"
 		],
 		"PostLogoutRedirectUris":
 		[
-			"http://localhost:44290/signout-oidc",
-			"https://localhost:44390/signout-oidc"
+			"http://localhost:44291",
+			"https://localhost:44391"
 		],
 		"BackChannelLogoutSessionRequired": false,
 		"BackChannelLogoutUri": null,
